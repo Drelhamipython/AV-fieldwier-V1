@@ -17,7 +17,7 @@ const App = (() => {
   const canAdmin=()=>['admin','project_manager'].includes(profile?.role);
 
   async function start(){
-    if('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js').catch(()=>{});
+    if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch(()=>{});
     if(!initSb()) return renderSetup();
     const {data}=await sb.auth.getUser(); user=data.user;
     if(!user) return renderLogin();
