@@ -37,3 +37,17 @@
   .card{border-radius:16px}
   .table{font-size:14px}
 }
+
+
+/* v5.9 site reports */
+.reportLine{border-top:1px solid rgba(255,255,255,.07);padding:12px 0;display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+.reportCards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.reportCard{border:1px solid rgba(201,152,58,.18);border-radius:18px;background:rgba(255,255,255,.035);padding:16px}
+.reportSummary p{margin:5px 0 12px;color:var(--muted)}
+.reportThumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0}
+.reportThumbs img{width:100%;aspect-ratio:1;height:auto;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.1)}
+.reportDetail{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:16px;margin-top:18px}
+@media(max-width:800px){
+  .reportCards,.reportDetail{grid-template-columns:1fr}
+  .reportLine{flex-direction:column}
+}
