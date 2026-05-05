@@ -174,6 +174,9 @@
 .fileItem{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid rgba(132,101,45,.14);background:rgba(255,253,246,.86);border-radius:12px;padding:10px}
 .fileItem a{color:#2f281d;font-weight:800;text-decoration:none}
 .fileItem a:hover{text-decoration:underline}
+.photoChoiceRow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}
+.photoChoiceBtn{display:flex;align-items:center;justify-content:center;min-height:46px;text-align:center}
+.photoInputHidden{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important}
 @media(max-width:900px){
   .sidebar{
     width:min(82vw,320px);
@@ -224,4 +227,4 @@
     backdrop-filter:blur(1px);
   }
 }
-@media(max-width:640px){.fileItem{align-items:flex-start;flex-direction:column}}
+@media(max-width:640px){.fileItem{align-items:flex-start;flex-direction:column}.photoChoiceRow{grid-template-columns:1fr}}
