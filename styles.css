@@ -233,3 +233,22 @@
   }
 }
 @media(max-width:640px){.fileItem{align-items:flex-start;flex-direction:column}.photoChoiceRow{grid-template-columns:1fr}}
+
+/* v5.32 spreadsheet import center */
+.importGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.importSourcePanel{margin-top:14px}
+.tableWrap{width:100%;overflow:auto;-webkit-overflow-scrolling:touch}
+.tableWrap .table{min-width:760px}
+.checkRow{display:flex;align-items:center;gap:10px;color:#4a3b21;font-weight:800}
+.checkRow input{width:18px;height:18px;accent-color:var(--gold)}
+.importStats{grid-template-columns:repeat(4,minmax(0,1fr));margin:14px 0}
+.importStats div{border:1px solid rgba(132,101,45,.14);background:rgba(255,253,246,.78);border-radius:14px;padding:12px}
+.importStats b{display:block;color:#2f281d;font-size:26px;line-height:1}
+.importStats span{display:block;color:#75684f;font-size:12px;margin-top:7px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.importErrors{margin-top:16px}
+.importWarning{color:#6c5018}
+.importSourcePanel textarea#importText{min-height:170px}
+.card select[data-import-map]{min-width:220px}
+button:disabled{opacity:.48;cursor:not-allowed}
+@media(max-width:1100px){.importGrid{grid-template-columns:1fr}.importStats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.importStats{grid-template-columns:1fr}.checkRow{align-items:flex-start}.tableWrap .table{min-width:680px}}
