@@ -16,12 +16,16 @@
 .searchGrid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
 .searchHit{text-align:left;color:var(--text)}
 .searchHit span{display:block;margin-top:10px;color:var(--gold2);font-size:28px;font-weight:850}
+.bidStats{margin-top:0}
+.bidFilters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:end}
+.bidFilterActions .btn{width:100%;min-height:46px}
 .photo .pbody b{display:block;line-height:1.15;overflow-wrap:anywhere}
 .table{min-width:720px}
 .card{overflow:auto}
 @media(max-width:1100px){
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .dashboardGrid,.reportGrid{grid-template-columns:1fr}
+  .bidFilters{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:640px){
   .topbar{align-items:stretch;flex-wrap:wrap}
@@ -36,6 +40,7 @@
   .content{padding:16px}
   .card{border-radius:16px}
   .table{font-size:14px}
+  .bidFilters{grid-template-columns:1fr}
 }
 
 
